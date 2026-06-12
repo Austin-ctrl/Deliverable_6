@@ -29,22 +29,24 @@ class replay_buffer:
 
         return len(self.buffer)
     
-    
-if __name__ == "__main__":
 
-    buffer = replay_buffer(1000)
+# testy
 
-    buffer.add(
-        "state1",
-        3,
-        1.0,
-        "state2",
-        False
-    )
+#if __name__ == "__main__":
 
-    print(len(buffer))
+#    buffer = replay_buffer(1000)
+#
+#    buffer.add(
+#        "state1",
+#        3,  # action3 gas
+#        1.0,  # reward 1,0
+#        "state2",
+#        False
+#    )
 
-    batch = buffer.sample(1)
+#    print(len(buffer))
 
-    print(batch)
+#    batch = buffer.sample(1)
+
+#    print(batch)
     
